@@ -1,0 +1,38 @@
+/* Replace the content of app/globals.css with this for full Tailwind v4 support */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  /* Project Aegis Color System - OKLCH for Tailwind v4 */
+  --color-aegis-50: oklch(98.04% 0.013 154.72);
+  --color-aegis-100: oklch(95.12% 0.026 154.72);
+  --color-aegis-200: oklch(89.39% 0.052 154.72);
+  --color-aegis-300: oklch(80.98% 0.104 154.72);
+  --color-aegis-400: oklch(72.58% 0.156 154.72);
+  --color-aegis-500: oklch(64.17% 0.208 154.72);
+  --color-aegis-600: oklch(55.76% 0.156 142.36);
+  --color-aegis-700: oklch(47.35% 0.13 142.36);
+  --color-aegis-800: oklch(38.94% 0.104 142.36);
+  --color-aegis-900: oklch(30.53% 0.078 142.36);
+  --color-aegis-950: oklch(15.29% 0.039 142.36);
+
+  /* Green color system for compatibility */
+  --color-green-50: oklch(98.04% 0.013 154.72);
+  --color-green-100: oklch(95.12% 0.026 154.72);
+  --color-green-200: oklch(89.39% 0.052 154.72);
+  --color-green-300: oklch(80.98% 0.104 154.72);
+  --color-green-400: oklch(72.58% 0.156 154.72);
+  --color-green-500: oklch(64.17% 0.208 154.72);
+  --color-green-600: oklch(55.76% 0.156 142.36);
+  --color-green-700: oklch(47.35% 0.13 142.36);
+  --color-green-800: oklch(38.94% 0.104 142.36);
+  --color-green-900: oklch(30.53% 0.078 142.36);
+  --color-green-950: oklch(15.29% 0.039 142.36);
+
+  /* Border radius */
+  --radius: 0.5rem;
+}
+
+/* Rest of the CSS remains the same as the hybrid version */
+/* ... (copy from the main globals.css) ... */

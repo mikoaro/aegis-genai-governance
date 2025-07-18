@@ -1,0 +1,300 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* shadcn/ui system colors for Tailwind v4 - LIGHT MODE */
+  --color-background: oklch(100% 0 0);
+  --color-foreground: oklch(15% 0 0);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(15% 0 0);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(15% 0 0);
+  --color-primary: oklch(55.76% 0.156 142.36);
+  --color-primary-foreground: oklch(98% 0 0);
+  --color-secondary: oklch(96% 0.006 106);
+  --color-secondary-foreground: oklch(45% 0.006 106);
+  --color-muted: oklch(96% 0.006 106);
+  --color-muted-foreground: oklch(52% 0.006 106);
+  --color-accent: oklch(96% 0.006 106);
+  --color-accent-foreground: oklch(45% 0.006 106);
+  --color-destructive: oklch(62% 0.204 27);
+  --color-destructive-foreground: oklch(98% 0 0);
+  --color-border: oklch(89% 0.006 106);
+  --color-input: oklch(89% 0.006 106);
+  --color-ring: oklch(55.76% 0.156 142.36);
+
+  /* Project Aegis Color System - OKLCH for Tailwind v4 */
+  --color-aegis-50: oklch(98.04% 0.013 154.72);
+  --color-aegis-100: oklch(95.12% 0.026 154.72);
+  --color-aegis-200: oklch(89.39% 0.052 154.72);
+  --color-aegis-300: oklch(80.98% 0.104 154.72);
+  --color-aegis-400: oklch(72.58% 0.156 154.72);
+  --color-aegis-500: oklch(64.17% 0.208 154.72);
+  --color-aegis-600: oklch(55.76% 0.156 142.36);
+  --color-aegis-700: oklch(47.35% 0.13 142.36);
+  --color-aegis-800: oklch(38.94% 0.104 142.36);
+  --color-aegis-900: oklch(30.53% 0.078 142.36);
+  --color-aegis-950: oklch(15.29% 0.039 142.36);
+
+  /* Green color system for compatibility */
+  --color-green-50: oklch(98.04% 0.013 154.72);
+  --color-green-100: oklch(95.12% 0.026 154.72);
+  --color-green-200: oklch(89.39% 0.052 154.72);
+  --color-green-300: oklch(80.98% 0.104 154.72);
+  --color-green-400: oklch(72.58% 0.156 154.72);
+  --color-green-500: oklch(64.17% 0.208 154.72);
+  --color-green-600: oklch(55.76% 0.156 142.36);
+  --color-green-700: oklch(47.35% 0.13 142.36);
+  --color-green-800: oklch(38.94% 0.104 142.36);
+  --color-green-900: oklch(30.53% 0.078 142.36);
+  --color-green-950: oklch(15.29% 0.039 142.36);
+
+  /* Border radius */
+  --radius: 0.5rem;
+
+  /* Animation timing functions */
+  --animate-duration-fast: 150ms;
+  --animate-duration-normal: 300ms;
+  --animate-duration-slow: 500ms;
+  --animate-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark mode using .dark class selector for next-themes compatibility */
+.dark {
+  /* Dark mode shadcn/ui system colors */
+  --color-background: oklch(9% 0.006 106);
+  --color-foreground: oklch(98% 0 0);
+  --color-card: oklch(9% 0.006 106);
+  --color-card-foreground: oklch(98% 0 0);
+  --color-popover: oklch(9% 0.006 106);
+  --color-popover-foreground: oklch(98% 0 0);
+  --color-primary: oklch(64% 0.156 142.36);
+  --color-primary-foreground: oklch(20% 0.156 142.36);
+  --color-secondary: oklch(15% 0.006 106);
+  --color-secondary-foreground: oklch(98% 0 0);
+  --color-muted: oklch(15% 0.006 106);
+  --color-muted-foreground: oklch(65% 0.006 106);
+  --color-accent: oklch(15% 0.006 106);
+  --color-accent-foreground: oklch(98% 0 0);
+  --color-destructive: oklch(45% 0.204 27);
+  --color-destructive-foreground: oklch(98% 0 0);
+  --color-border: oklch(15% 0.006 106);
+  --color-input: oklch(15% 0.006 106);
+  --color-ring: oklch(64% 0.156 142.36);
+
+  /* Dark mode Aegis colors - inverted for better contrast */
+  --color-aegis-50: oklch(15.29% 0.039 142.36);
+  --color-aegis-100: oklch(30.53% 0.078 142.36);
+  --color-aegis-200: oklch(38.94% 0.104 142.36);
+  --color-aegis-300: oklch(47.35% 0.13 142.36);
+  --color-aegis-400: oklch(55.76% 0.156 142.36);
+  --color-aegis-500: oklch(64.17% 0.208 154.72);
+  --color-aegis-600: oklch(72.58% 0.156 154.72);
+  --color-aegis-700: oklch(80.98% 0.104 154.72);
+  --color-aegis-800: oklch(89.39% 0.052 154.72);
+  --color-aegis-900: oklch(95.12% 0.026 154.72);
+  --color-aegis-950: oklch(98.04% 0.013 154.72);
+
+  /* Dark mode green colors */
+  --color-green-50: oklch(15.29% 0.039 142.36);
+  --color-green-100: oklch(30.53% 0.078 142.36);
+  --color-green-200: oklch(38.94% 0.104 142.36);
+  --color-green-300: oklch(47.35% 0.13 142.36);
+  --color-green-400: oklch(55.76% 0.156 142.36);
+  --color-green-500: oklch(64.17% 0.208 154.72);
+  --color-green-600: oklch(72.58% 0.156 154.72);
+  --color-green-700: oklch(80.98% 0.104 154.72);
+  --color-green-800: oklch(89.39% 0.052 154.72);
+  --color-green-900: oklch(95.12% 0.026 154.72);
+  --color-green-950: oklch(98.04% 0.013 154.72);
+}
+
+/* Base styles using theme colors */
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Custom keyframes using theme colors */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px var(--color-primary);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-primary);
+  }
+}
+
+@keyframes typing {
+  0%,
+  80%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-green {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Agent trace animations */
+.agent-panel {
+  transition: all var(--animate-duration-normal) var(--animate-ease-in-out);
+}
+
+.agent-panel.active {
+  box-shadow: 0 0 0 2px var(--color-primary), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.agent-panel.processing {
+  background-color: color-mix(in oklch, var(--color-primary) 5%, transparent);
+}
+
+.agent-panel.completed {
+  background-color: color-mix(in oklch, var(--color-primary) 10%, transparent);
+}
+
+/* Typing animation */
+.typing-indicator {
+  display: inline-flex;
+  align-items: center;
+}
+
+.typing-indicator span {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: inline-block;
+  margin: 0 1px;
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+/* Animation utilities */
+.animate-pulse-green {
+  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-slide-in {
+  animation: slide-in var(--animate-duration-normal) ease-out;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Enhanced gradients */
+.bg-aegis-gradient {
+  background: linear-gradient(135deg, var(--color-aegis-500) 0%, var(--color-aegis-700) 100%);
+}
+
+.text-aegis-gradient {
+  background: linear-gradient(135deg, var(--color-aegis-600) 0%, var(--color-aegis-800) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in oklch, var(--color-primary) 50%, transparent);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+
+/* Switch component styles */
+.switch-root {
+  width: 44px;
+  height: 25px;
+  background-color: var(--color-input);
+  border-radius: 9999px;
+  position: relative;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--animate-duration-fast) var(--animate-ease-in-out);
+}
+
+.switch-root:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+.switch-root[data-state="checked"] {
+  background-color: var(--color-primary);
+}
+
+.switch-root[data-state="unchecked"] {
+  background-color: var(--color-input);
+}
+
+.switch-root:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.switch-thumb {
+  pointer-events: none;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: var(--color-background);
+  border-radius: 9999px;
+  box-shadow: 0 2px 2px color-mix(in oklch, black 20%, transparent);
+  transition: transform var(--animate-duration-fast) var(--animate-ease-in-out);
+  transform: translateX(2px);
+  will-change: transform;
+}
+
+.switch-root[data-state="checked"] .switch-thumb {
+  transform: translateX(19px);
+}
+
+.switch-root[data-state="unchecked"] .switch-thumb {
+  transform: translateX(2px);
+}
