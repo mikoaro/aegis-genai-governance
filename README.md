@@ -18,7 +18,7 @@ Coach developers by providing clear, educational feedback when a request is bloc
 
 ## Features
 
-- *New: Private Network, Kurtosis NEAR and Kurtosis Ethereum Testnet In Lieu Of Amazon Quantum Ledger Database (QLDB) End Of Life (EOL) Support in development*
+- *New: Private Network, Kurtosis NEAR and Kurtosis Ethereum Testnet Support In Lieu Of Amazon Quantum Ledger Database (QLDB) End Of Life (EOL) in development*
 
 Core Features
 Dynamic Policy Enforcement: Uses an Amazon Bedrock Knowledge Base to check prompts against regulations like GDPR in real-time.
